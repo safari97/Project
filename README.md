@@ -128,7 +128,7 @@ This step, I think, was optional too. I'd like to remove the pairs of parenthese
     names(MeanStd) <- gsub('-std\\(\\)','Std',names(MeanStd))  
     names(MeanStd) <- gsub('-','_',names(MeanStd))
 
-### Calculate the average of each feature for each activity and each subject. 
+### Calculate the Average of Each Feature for Each Activity and Each Subject. 
 The function aggregate() worked perfectly for this case. To avoid the excessively long line, a list was created that contains the Subject column and the Activity column:    
 
     bylist = list(Subject = MeanStd$Subject,Activity = MeanStd$Activity)  
